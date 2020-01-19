@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <TextView
+           android:id="@+id/person_view_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="name"
+           android:layout_marginLeft="10dp"
+           android:textSize="25dp"
+           android:textColor="#000000"
+           android:paddingBottom="3dp"/>
+        <ImageView
+            android:id="@+id/person_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="0dp"/>
+
+        <TextView
+            android:id="@+id/person_view_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="discover"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/person_view_leftbtn"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="110dp"-->
+            <!--android:src="@drawable/ic_highlight_off_black_24dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/person_view_rightbtn"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:src="@drawable/ic_like" />-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+        android:id="@+id/person_view_leftbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/ic_highlight_off_black_24dp"
+            android:visibility="gone"/>
+
+        <ImageView
+        android:id="@+id/person_view_rightbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_like"
+            android:layout_marginTop="10dp" />
+          <TextView
+              android:id="@+id/person_view_likes"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="18dp"
+              android:text="likes you"
+              android:paddingLeft="10dp"
+              android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
